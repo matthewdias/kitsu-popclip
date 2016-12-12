@@ -2,7 +2,7 @@
 
 		require 'cgi'
 
-		url = "https://staging.kitsu.io/anime?text={query}"
+		url = "https://kitsu.io/anime?text={query}"
 		query = ENV['POPCLIP_TEXT']
 		url.sub!(/\{query\}/,CGI.escape(query))
 
